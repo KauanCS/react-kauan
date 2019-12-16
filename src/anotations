@@ -1,0 +1,31 @@
+        {arrayTeste.map((linha, { index: test }) => (
+          <Teste>
+            {arrayTeste.map((coluna, index) => (
+              <BoardRow key={`${linha}-${coluna}`}>
+                {this.renderSquare(test * index)}
+              </BoardRow>
+            ))}
+          </Teste>
+        ))}
+
+        BoardRow
+
+     <BoardRow>{this.celulas().map(v => v)}</BoardRow>
+
+
+
+        <BoardRow>
+          {this.renderSquare(0)}
+          {this.renderSquare(1)}
+          {this.renderSquare(2)}
+        </BoardRow>
+        <BoardRow>
+          {this.renderSquare(3)}
+          {this.renderSquare(4)}
+          {this.renderSquare(5)}
+        </BoardRow>
+        <BoardRow>
+          {this.renderSquare(6)}
+          {this.renderSquare(7)}
+          {this.renderSquare(8)}
+        </BoardRow>
